@@ -192,6 +192,60 @@ const practiceAreas = [
 // REVIEWS REAIS DO GOOGLE MAPS
 const reviews = [
   {
+    name: "Gustavo Santos",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Um advogado muito competente, dedicado e sempre bem recomendado por quem já precisou de seus serviços. Demonstra muito conhecimento na área e compromisso com seus clientes. Sem dúvida, é um profissional que indico com confiança.",
+    ownerReply:
+      "Muito obrigado pela confiança e pelas palavras, Gustavo! Atuar com ética, dedicação e compromisso na defesa dos direitos de cada cliente é a nossa missão diária.",
+  },
+  {
+    name: "Júlia Sampaio",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Excelente profissional! Muito atencioso com o cliente o processo. Indico de olhos fechados!",
+    ownerReply:
+      "Agradeço imensamente pela recomendação, Júlia! Manter o cliente seguro e bem orientado em cada fase do processo é prioridade absoluta.",
+  },
+  {
+    name: "Albert Gustavo",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Excelente profissional! Sabe lidar com o cliente de forma clara e objetiva!",
+    ownerReply:
+      "Muito obrigado, Albert! A clareza e a transparência são essenciais para que cada pessoa entenda perfeitamente seus direitos.",
+  },
+  {
+    name: "Ederaldo José dos Santos",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Excelente advogado! Dá todo o suporte necessário que precisamos. Atencioso, interessado e educado. Recomendo.",
+    ownerReply:
+      "Agradeço de coração, Ederaldo! Estar sempre presente para dar o suporte que o cliente precisa é o nosso compromisso.",
+  },
+  {
+    name: "Deiller Junio",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Excelente profissional, muito atencioso e claro na condução dos processos.",
+    ownerReply:
+      "Muito obrigado pela avaliação, Deiller! Saber que nosso atendimento fez a diferença é a maior satisfação.",
+  },
+  {
+    name: "danubia viana macedo",
+    stars: 5,
+    date: "Avaliação no Google",
+    comment:
+      "Atendimento diferenciado, atenção do início ao fim, preocupando sempre com a segurança do cliente.",
+    ownerReply:
+      "Muito obrigado, Danubia! O acolhimento humano e a segurança jurídica caminham sempre juntos na nossa advocacia.",
+  },
+  {
     name: "Millena Silva",
     stars: 5,
     date: "Avaliação no Google",
@@ -966,16 +1020,16 @@ export default function Home() {
         {/* PROVA SOCIAL - AVALIAÇÕES REAIS NO GOOGLE */}
         <section
           id="avaliacoes"
-          className="scroll-mt-24 bg-white py-20 sm:py-28 lg:py-32"
+          className="scroll-mt-24 bg-ivory py-20 sm:py-28 lg:py-32"
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="grid items-end justify-between gap-8 md:grid-cols-[1.1fr_0.9fr]">
               <Heading
-                eyebrow="PROVA SOCIAL & CONFIANÇA"
-                description="Veja os relatos espontâneos de pessoas que tiveram seus direitos garantidos com segurança e acolhimento."
+                eyebrow="AVALIAÇÕES NO GOOGLE"
+                description="Alguns comentários publicados no perfil público. Acesse o Google para consultar as avaliações e informações atualizadas."
               >
-                A confiança de mais de{" "}
-                <span className="italic text-gold-600">50 famílias atendidas.</span>
+                A confiança de quem já conquistou seus{" "}
+                <span className="italic text-gold-600">direitos no INSS.</span>
               </Heading>
 
               {/* Card Resumo do Google */}
@@ -983,12 +1037,12 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-bold uppercase tracking-widest text-gold-300">
-                      Google Maps
+                      Perfil Público no Google
                     </span>
                   </div>
-                  <div className="flex gap-0.5 text-amber-400">
+                  <div className="flex gap-1 text-amber-400" aria-label="5 estrelas no Google">
                     {Array.from({ length: 5 }, (_, i) => (
-                      <Star key={i} size={16} fill="currentColor" />
+                      <Star key={i} size={18} fill="#f59e0b" strokeWidth={0} />
                     ))}
                   </div>
                 </div>
@@ -996,7 +1050,7 @@ export default function Home() {
                   <span className="font-serif text-5xl font-semibold text-white">5,0</span>
                   <div className="text-xs text-white/70">
                     <p className="font-bold text-gold-300">51 avaliações públicas</p>
-                    <p>100% de satisfação e recomendação</p>
+                    <p>Classificação máxima e 100% de recomendação</p>
                   </div>
                 </div>
                 <div className="mt-5 border-t border-white/10 pt-4">
@@ -1006,7 +1060,7 @@ export default function Home() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 text-xs font-semibold text-gold-300 hover:text-white"
                   >
-                    Ver avaliações no perfil do Google <ArrowUpRight size={14} />
+                    Ver todas as avaliações no Google <ArrowUpRight size={14} />
                   </a>
                 </div>
               </div>
@@ -1017,45 +1071,53 @@ export default function Home() {
               {reviews.map((rev) => (
                 <div
                   key={rev.name}
-                  className="flex flex-col justify-between rounded-xl border border-navy-950/10 bg-ivory p-6 shadow-xs transition-all hover:border-gold-500/40 hover:shadow-card"
+                  className="flex flex-col justify-between rounded-xl border border-navy-950/10 bg-white p-7 shadow-xs transition-all duration-300 hover:border-gold-500/40 hover:shadow-card"
                 >
                   <div>
+                    {/* Header do Card */}
                     <div className="flex items-center justify-between">
-                      <div className="flex gap-0.5 text-amber-500">
-                        {Array.from({ length: rev.stars }, (_, i) => (
-                          <Star key={i} size={14} fill="currentColor" />
-                        ))}
-                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold-700">
+                        GOOGLE · RELATO PÚBLICO
+                      </span>
                       <span className="text-[10px] text-ink-muted">
                         {rev.date}
                       </span>
                     </div>
 
-                    <p className="mt-4 text-[14px] leading-relaxed text-navy-950 font-normal italic">
+                    {/* As 5 Estrelinhas Douradas */}
+                    <div
+                      className="my-3.5 flex items-center gap-1.5 text-amber-500"
+                      aria-label="5 estrelas"
+                    >
+                      {Array.from({ length: rev.stars }, (_, i) => (
+                        <Star key={i} size={18} fill="#f59e0b" strokeWidth={0} />
+                      ))}
+                    </div>
+
+                    {/* Texto com fonte ampliada para leitura confortável */}
+                    <p className="mt-2 text-[17px] sm:text-[18px] leading-[1.65] font-normal text-navy-950">
                       &ldquo;{rev.comment}&rdquo;
                     </p>
                   </div>
 
-                  <div className="mt-6 border-t border-navy-950/10 pt-4">
+                  <div className="mt-7 border-t border-navy-950/10 pt-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-xs font-bold text-navy-950">
+                        <p className="text-[15px] font-bold text-navy-950">
                           {rev.name}
                         </p>
-                        {rev.tag && (
-                          <p className="text-[10px] font-medium text-gold-700">
-                            {rev.tag}
-                          </p>
-                        )}
+                        <p className="text-[10px] font-semibold uppercase tracking-wider text-ink-muted">
+                          {rev.tag ? `${rev.tag} · AVALIAÇÃO NO GOOGLE` : "AVALIAÇÃO PÚBLICA NO GOOGLE"}
+                        </p>
                       </div>
-                      <span className="grid size-7 place-items-center rounded-full bg-gold-100 text-gold-800 text-[11px] font-bold">
+                      <span className="grid size-8 place-items-center rounded-full bg-gold-100 text-gold-800 text-xs font-bold">
                         {rev.name[0]}
                       </span>
                     </div>
 
-                    {/* Resposta do proprietário */}
+                    {/* Resposta atenciosa do proprietário */}
                     {rev.ownerReply && (
-                      <div className="mt-3.5 rounded-lg border-l-2 border-gold-500 bg-white p-3 text-[11px] leading-relaxed text-ink-soft">
+                      <div className="mt-4 rounded-lg border-l-2 border-gold-500 bg-gold-50/60 p-3.5 text-xs leading-relaxed text-ink-soft">
                         <span className="font-semibold text-navy-900 block mb-1">
                           Resposta do Dr. Jackson:
                         </span>
@@ -1075,7 +1137,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-navy-950/20 bg-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider text-navy-950 shadow-xs transition-colors hover:border-gold-500 hover:text-gold-700"
               >
-                Conferir todas as avaliações no Google Maps <ArrowUpRight size={15} />
+                Conferir perfil completo no Google Maps <ArrowUpRight size={15} />
               </a>
             </div>
           </div>
