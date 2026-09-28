@@ -189,75 +189,21 @@ const practiceAreas = [
   },
 ];
 
-// REVIEWS REAIS DO GOOGLE MAPS
+// REVIEWS REAIS DO GOOGLE MAPS - JACKSON SANTOS ADVOGADO PREVIDENCIARISTA
 const reviews = [
-  {
-    name: "Gustavo Santos",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Um advogado muito competente, dedicado e sempre bem recomendado por quem já precisou de seus serviços. Demonstra muito conhecimento na área e compromisso com seus clientes. Sem dúvida, é um profissional que indico com confiança.",
-    ownerReply:
-      "Muito obrigado pela confiança e pelas palavras, Gustavo! Atuar com ética, dedicação e compromisso na defesa dos direitos de cada cliente é a nossa missão diária.",
-  },
-  {
-    name: "Júlia Sampaio",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Excelente profissional! Muito atencioso com o cliente o processo. Indico de olhos fechados!",
-    ownerReply:
-      "Agradeço imensamente pela recomendação, Júlia! Manter o cliente seguro e bem orientado em cada fase do processo é prioridade absoluta.",
-  },
-  {
-    name: "Albert Gustavo",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Excelente profissional! Sabe lidar com o cliente de forma clara e objetiva!",
-    ownerReply:
-      "Muito obrigado, Albert! A clareza e a transparência são essenciais para que cada pessoa entenda perfeitamente seus direitos.",
-  },
-  {
-    name: "Ederaldo José dos Santos",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Excelente advogado! Dá todo o suporte necessário que precisamos. Atencioso, interessado e educado. Recomendo.",
-    ownerReply:
-      "Agradeço de coração, Ederaldo! Estar sempre presente para dar o suporte que o cliente precisa é o nosso compromisso.",
-  },
-  {
-    name: "Deiller Junio",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Excelente profissional, muito atencioso e claro na condução dos processos.",
-    ownerReply:
-      "Muito obrigado pela avaliação, Deiller! Saber que nosso atendimento fez a diferença é a maior satisfação.",
-  },
-  {
-    name: "danubia viana macedo",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Atendimento diferenciado, atenção do início ao fim, preocupando sempre com a segurança do cliente.",
-    ownerReply:
-      "Muito obrigado, Danubia! O acolhimento humano e a segurança jurídica caminham sempre juntos na nossa advocacia.",
-  },
   {
     name: "Millena Silva",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "7 meses atrás",
     comment:
       "Ótimo profissional, muito atencioso, atendimento humanizado. Recomendo!",
     ownerReply:
-      "Agradeço de coração pela sua avaliação! 🙏 Saber que consegui te ajudar com seu benefício do INSS é extremamente gratificante. Cada caso é único, e meu objetivo é sempre oferecer um atendimento próximo, claro e seguro para que você se sinta amparada em todo o processo.",
+      "Agradeço de coração pela sua avaliação! 🙏 Saber que consegui te ajudar com seu benefício do INSS é extremamente gratificante. Cada caso é único, e meu objetivo é sempre oferecer um atendimento próximo, claro e seguro para que você se sinta amparada em todo o processo. Muito obrigado pela confiança no meu trabalho como advogado previdenciário. Estou sempre à disposição!",
   },
   {
     name: "Karine Oliveira",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "7 meses atrás",
     comment:
       "Excelente profissional. Atencioso, claro nas orientações e muito ético. Me senti segura e bem assessorada desde o primeiro atendimento.",
     ownerReply:
@@ -266,7 +212,7 @@ const reviews = [
   {
     name: "Danielly Viveiros",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "4 meses atrás",
     comment:
       "Excelente profissional, fez um ótimo trabalho com rapidez e excelência, indico muito.",
     ownerReply:
@@ -275,66 +221,93 @@ const reviews = [
   {
     name: "Lavinia Andrade",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "6 meses atrás",
     comment:
       "Um excelente profissional, dedicado e responsável super indico!",
     ownerReply:
-      "Muito obrigado pela sua avaliação e pelas palavras, Lavinia! 🙏 Trabalhar com direito previdenciário e benefícios do INSS é mais do que uma profissão para mim — é um compromisso em garantir que cada cliente tenha seus direitos respeitados.",
+      "Muito obrigado pela sua avaliação e pelas palavras, Lavinia! 🙏 Fico muito feliz em saber que pude te ajudar nesse momento tão importante. Trabalhar com direito previdenciário e benefícios do INSS é mais do que uma profissão para mim — é um compromisso em garantir que cada cliente tenha seus direitos respeitados. Sempre que precisar, pode contar comigo!",
   },
   {
     name: "Dener Cabral",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "7 meses atrás",
     comment:
       "Excelente advogado. Atendimento personalizado, confiável e resolveu minhas dúvidas de forma clara e objetiva sobre INSS. Recomendo.",
     ownerReply:
-      "Agradeço de coração pela sua avaliação! Prezo muito por um atendimento humanizado e transparente, principalmente em questões envolvendo o INSS, que muitas vezes geram dúvidas e insegurança.",
+      "Agradeço de coração pela sua avaliação! 🙏 Prezo muito por um atendimento humanizado e transparente, principalmente em questões envolvendo o INSS, que muitas vezes geram dúvidas e insegurança. Fico feliz em saber que sua experiência foi positiva!",
+  },
+  {
+    name: "Lucio Paulo",
+    stars: 5,
+    date: "7 meses atrás",
+    comment:
+      "Ótimo profissional, ótimo atendimento, recomendo!!",
+    ownerReply:
+      "Muito obrigado pelo seu feedback! Trabalho sempre para oferecer um atendimento ágil e eficiente na resolução de questões junto ao INSS. Saber que você ficou satisfeito faz toda a diferença! Estou sempre à disposição!",
   },
   {
     name: "Sergio Luis dos Santos",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "9 meses atrás",
     comment:
       "Excelente profissional! Atendimento humanizado e personalizado. Além de sempre manter informado sobre o processo e requerimento. Recomendo!",
     ownerReply:
-      "Gratidão pela sua avaliação! A confiança de cada cliente é algo que valorizo muito na minha atuação como advogado previdenciário. Sempre que precisar, pode contar comigo!",
+      "Gratidão pela sua avaliação! A confiança de cada cliente é algo que valorizo muito na minha atuação como advogado previdenciário. Fico feliz em saber que atendi suas expectativas. Sempre que precisar, pode contar comigo!",
   },
   {
     name: "Gabrielle Almeida",
     tag: "Local Guide",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "7 meses atrás",
     comment:
       "Ótimo profissional, está sempre muito atualizado, passa as informações de forma clara e precisa e é muito atencioso.",
     ownerReply:
-      "Agradeço imensamente pelo feedback, Gabrielle! A constante atualização jurídica é essencial para defender cada cliente com o máximo rigor técnico perante o INSS.",
+      "Agradeço de coração pela sua avaliação! 🙏 Prezo muito por um atendimento humanizado e transparente, principalmente em questões envolvendo o INSS, que muitas vezes geram dúvidas e insegurança. Fico feliz em saber que sua experiência foi positiva!",
+  },
+  {
+    name: "Isabella Santos",
+    stars: 5,
+    date: "9 meses atrás",
+    comment:
+      "Excelente profissional. Além de ser um ótimo profissional, é alguém que realmente se dedica ao que faz, recomendo demais.",
+    ownerReply:
+      "Gratidão pela sua avaliação! A confiança de cada cliente é algo que valorizo muito na minha atuação como advogado previdenciário. Fico feliz em saber que atendi suas expectativas. Sempre que precisar, pode contar comigo!",
+  },
+  {
+    name: "Lara Silva",
+    stars: 5,
+    date: "1 ano atrás",
+    comment:
+      "Um excelente profissional, com ampla explicação e atenção!! Me auxiliou e resolveu meu problema com Salário Maternidade com toda dedicação, trabalho e rapidez.",
+    ownerReply:
+      "Conte sempre comigo e com nosso escritório, Lara!",
+  },
+  {
+    name: "Larissa Lima",
+    stars: 5,
+    date: "9 meses atrás",
+    comment:
+      "Um excelente profissional, me passou muita segurança e me informou detalhadamente minhas demais dúvidas!!",
+    ownerReply:
+      "Muito obrigado pela confiança, Larissa! Transmitir segurança e esclarecer cada detalhe é a base do nosso trabalho.",
   },
   {
     name: "Jao",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "5 meses atrás",
     comment:
       "Perfeito atendimento. Fala de forma clara e coerente buscando sanar as dúvidas da forma mais rápida e informativa possível.",
     ownerReply:
       "Muito obrigado! O atendimento próximo e a linguagem acessível são pilares do nosso trabalho diário.",
   },
   {
-    name: "Lucio Paulo",
-    stars: 5,
-    date: "Avaliação no Google",
-    comment:
-      "Ótimo profissional, ótimo atendimento, recomendo!!",
-    ownerReply:
-      "Trabalho sempre para oferecer um atendimento ágil e eficiente na resolução de questões junto ao INSS. Saber que você ficou satisfeito faz toda a diferença!",
-  },
-  {
     name: "Paula Souza",
     stars: 5,
-    date: "Avaliação no Google",
+    date: "6 meses atrás",
     comment:
       "Muito bom mesmo, super verdadeiro e uma boa pessoa e como profissional.",
     ownerReply:
-      "Agradeço de coração! Cada caso é único e luto pelos direitos de cada cliente com ética e sinceridade absoluta.",
+      "Agradeço de coração pela sua avaliação! 🙏 Saber que consegui te ajudar com seu benefício do INSS é extremamente gratificante. Cada caso é único, e meu objetivo é sempre oferecer um atendimento próximo, claro e seguro para que você se sinta amparada em todo o processo.",
   },
 ];
 
