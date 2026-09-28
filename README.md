@@ -1,18 +1,31 @@
-# SG Advocacia
+# Jackson Santos - Advogado Previdenciarista
 
-Site institucional da SG Advocacia, escritório em Belo Horizonte com atendimento presencial e on-line.
+Site institucional e de alta conversão do Dr. Jackson Santos — Advogado Previdenciarista (OAB/MG 226.978), localizado em São João del-Rei - MG, com atendimento presencial e on-line em todo o território nacional.
 
-## Desenvolvimento
+## Execução & Desenvolvimento
 
-Instale as dependências com npm install e inicie o ambiente local com npm run dev.
+Instale as dependências com:
+```bash
+npm install
+```
 
-Abra http://localhost:3000 para visualizar o site.
+Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-## Tecnologias
+Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o site.
 
-- Next.js 16 com App Router
-- React 19
-- Tailwind CSS 4
-- Framer Motion
+## Build de Produção
+```bash
+npm run build
+npm run start
+```
 
-As imagens da marca ficam em public/sg-advocacia. Metadados e idioma são definidos em app/layout.tsx.
+## Tecnologias Empregadas
+
+- **Next.js 16** (App Router & Turbopack)
+- **React 19**
+- **Tailwind CSS 4**
+- **Framer Motion** (animações fluidas e respeitadoras de preferências de acessibilidade)
+- **Lucide React** (ícones de alta legibilidade)

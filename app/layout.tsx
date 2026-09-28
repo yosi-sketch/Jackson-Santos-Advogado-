@@ -17,18 +17,49 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SG Advocacia | Consultoria e Assessoria em Belo Horizonte",
+  metadataBase: new URL("https://jacksonsantosadv.com.br"),
+  title: "Jackson Santos | Advogado Previdenciarista · OAB/MG 226.978",
   description:
-    "Atendimento jurídico próximo em Belo Horizonte e on-line. Conheça a SG Advocacia, suas áreas de atuação e formas de contato.",
+    "Especialista em Direito Previdenciário. Aposentadorias, BPC/LOAS, Pensão por Morte, Benefícios por Incapacidade e Planejamento Previdenciário. Atendimento humanizado e transparente em São João del-Rei e on-line para todo o Brasil.",
   keywords: [
-    "SG Advocacia",
-    "advocacia em Belo Horizonte",
-    "advogada no Lindéia",
-    "direito de família",
-    "direito previdenciário",
-    "pensão por morte",
-    "orientação jurídica",
+    "Jackson Santos Advogado",
+    "Advogado Previdenciarista São João del Rei",
+    "Direito Previdenciário",
+    "Aposentadoria INSS",
+    "BPC LOAS",
+    "Pensão por morte",
+    "Planejamento previdenciário",
+    "Auxílio Doença",
+    "OAB MG 226.978",
+    "Benefícios do INSS",
   ],
+  authors: [{ name: "Dr. Jackson Santos" }],
+  openGraph: {
+    title: "Jackson Santos | Advogado Previdenciarista · OAB/MG 226.978",
+    description:
+      "Orientação jurídica clara, segura e humanizada para garantir seus direitos previdenciários junto ao INSS.",
+    url: "https://jacksonsantosadv.com.br",
+    siteName: "Jackson Santos Advogado Previdenciarista",
+    images: [
+      {
+        url: "/logo-no-background.png",
+        width: 1200,
+        height: 630,
+        alt: "Jackson Santos Advogado Previdenciarista",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "64x64", type: "image/png" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -37,8 +68,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={bodyFont.variable + " " + displayFont.variable + " scroll-smooth"}>
-      <body className="min-h-screen overflow-x-clip bg-ivory font-sans text-ink antialiased selection:bg-brand-700 selection:text-white">
+    <html
+      lang="pt-BR"
+      className={`${bodyFont.variable} ${displayFont.variable} scroll-smooth`}
+    >
+      <body className="min-h-screen overflow-x-clip bg-ivory font-sans text-ink antialiased selection:bg-gold-500 selection:text-navy-950">
         {children}
       </body>
     </html>
