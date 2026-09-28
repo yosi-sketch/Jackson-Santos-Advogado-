@@ -1067,8 +1067,8 @@ export default function Home() {
                       ))}
                     </div>
 
-                    {/* Texto com fonte ampliada para leitura confortável */}
-                    <p className="mt-2 text-[17px] sm:text-[18px] leading-[1.65] font-normal text-navy-950">
+                    {/* Texto com fonte de volta ao tamanho original e confortável */}
+                    <p className="mt-3 text-[14.5px] sm:text-[15px] leading-relaxed text-navy-950 font-normal italic">
                       &ldquo;{rev.comment}&rdquo;
                     </p>
                   </div>
@@ -1298,11 +1298,11 @@ export default function Home() {
             <div>
               <div className="inline-flex">
                 <Image
-                  src="/logo-header.png"
+                  src="/logo-footer.png"
                   width={330}
                   height={110}
                   alt="Jackson Santos Advogado Previdenciarista"
-                  className="h-auto w-[270px] brightness-0 invert"
+                  className="h-auto w-[260px] sm:w-[280px]"
                 />
               </div>
               <p className="mt-4 max-w-sm text-xs leading-relaxed text-white/70">
